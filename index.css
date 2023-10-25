@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 131, 180);
+}
+.container{
+    margin: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-links{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(7, 3, 83);
+    width: 350px;
+    height: 200px;
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+
+}
+.contact-box{
+    display: flex;
+   
+    /* justify-content: center; */
+
+}
+.link {
+    display: inline-block;
+    filter:hue-rotate(220deg);
+}
+.link img{
+    height: 30px;
+}
+.contact-form-wrapper {
+    display: flex;
+    height: 200px;
+    width: 350px;
+    background-color: rgb(118, 186, 231);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0px;
+}
+#myBtn{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(2, 2, 58);
+    color: white;
+    border-radius: 10px;
+    border: none;
+   
+}
+#myBtn:hover{
+    background-color:rgb(10, 70, 20);
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+.modal-content{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    /* transform: translate(-50%, -50%); */
+    width: 708px;
+    height: 381px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+img:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+input{
+    border: 1px solid;
+    width: 405px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: rgb(184, 180, 180);
+}
+textarea{
+    border: 1px solid;
+    width: 405px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: rgb(184, 180, 180);
+}
+label{
+    color: gray;
+}
+
+#myModal{
+   
+    display: none;
+}
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#myModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:gray;
+}
+#myBtn:hover{
+    background-color:rgb(10, 70, 20);
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+.form-item{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    padding: 10px;
+    margin: 23px;
+}
+.form-item label{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 1;
+}
+input:focus{
+    margin-top: 20px;
+}
+textarea:focus{
+    margin-top: 20px;
+}
+.submit-btn{
+    height: 31px;
+    width: 82px;
+    background-color: rgb(21, 3, 63);
+    color: white;
+    box-shadow: 10px gray;
+    border-radius: 5px;
+    margin-left: 201px;
+ 
+}
+form button{
+    transform: scale(1.1,1.1);
+}
+span.close{
+    padding: 105%;
+    cursor: pointer;
+}
+
+    
+@media screen and (max-width :720px){
+    .container{
+        margin: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    
+    }
+    .contact-form-wrapper {
+        display: flex;
+        height: 200px;
+        width: 350px;
+        background-color: rgb(118, 186, 231);
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .link {
+        display: inline-block;
+        filter:hue-rotate(220deg)
+    }
+    .contact-links {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(7, 3, 83);
+        width: 350px;
+        height: 200px;
+        color: white;
+        border-start-start-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 591px;
+        height: 381px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    div#myModal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:gray;
+    }
+
+}
+
+@media screen and (min-width:550) {
+    .modal-content{
+        margin: 150px;
+    }
+}
